@@ -348,6 +348,15 @@ template {
   display: none;
 }
 
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input,
+textarea {
+    -webkit-appearance: none; /* Для WebKit (Safari, Chrome) */
+    appearance: none;       /* Для других браузеров */
+    border-radius: 0;       /* Сброс радиуса */
+}
 
 @font-face {
     font-family: "Swiss";
@@ -614,10 +623,7 @@ a{
     font-family: Cygre;
     background-color: #65da0f;
     padding: 6px 0px;
-}
-
-.calc_btn a{
-    color: #65da0f;
+    color: #000;
 }
 
 .calc_price{
