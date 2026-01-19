@@ -610,7 +610,7 @@ a{
     border: 2px solid #65da0f;
     outline: none;
     padding: 0 12px;
-    border-radius: none;
+    border-radius: 0 !important;
 }
 
 .calc_input[type="text"]{
@@ -694,4 +694,3 @@ a{
     transform: scale(1.45) rotate(-12deg);
     opacity: .7;
 }
-/* обновленный */
