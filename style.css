@@ -1,0 +1,334 @@
+@font-face {
+    font-family: "Swiss";
+    src: url("./fonts/Swiss.woff2") format("woff2");
+    font-weight: 700;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Cygre";
+    src: url("./fonts/Cygre.woff2") format("woff2");
+    font-weight: 700;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Ermilov";
+    src: url("./fonts/Ermilov.woff2") format("woff2");
+    font-weight: 700;
+    font-display: swap; 
+}
+
+.h768px{
+    display: none;
+}
+.h1024px{
+    display: none;
+}
+
+.container{
+    width: 278px;
+}
+
+.header_text-1024px{
+    display: none;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+.calc_btn{
+    border: 2px solid #65da0f;
+    transition: all 0.1s ease;
+}
+
+@media (hover: hover){
+    .calc_btn:hover{
+        background-color: transparent;
+    }
+    .bottom-btn:hover a{
+        color: #65da0f;
+    }
+}
+
+@media(hover: none){
+    .calc_btn:active{
+        background-color: transparent;
+    }
+    .bottom-btn:active{
+        color: #65da0f;
+    }
+}
+
+body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+}
+
+p{
+    margin: 0;
+    padding: 0;
+}
+
+a{
+    text-decoration: none;
+    color: #000;
+    display: block;
+}
+
+.main_block{
+    max-height: 100vh;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.header{
+    padding-top: 50px;
+}
+
+.bottom{
+    padding-bottom: 80px;
+}
+
+.header_down, .header_up{
+    text-transform: uppercase;
+    font-family: Ermilov;
+    text-align: center;
+}
+
+.header_up{
+    font-size: 78.21px;
+    margin-left: -5px;
+}
+
+.header_down{
+    padding: 0;
+    font-size: 24.4px;
+    margin-bottom: 40px;
+}
+
+.divider-line{
+    height: 4px;
+    background-color: #65da0f;
+    margin-bottom: 12px;
+}
+
+.divider{
+    height: 2px;
+    background-color: #65da0f;
+}
+
+.header_desc{
+    font-family: Cygre;
+    font-size: 17px;
+    text-align-last: left;
+}
+
+.header_desc strong{
+    color: #65da0f;
+}
+
+.bottom_text-up{
+    font-family: Ermilov;
+    font-size: 19px;
+    text-align: right;
+    margin-left: -5px;
+}
+
+.bottom_text-down{
+    font-family: Swiss;
+    font-size: 51.5px;
+    margin-left: -5px;
+    line-height: 50px;
+    margin-bottom: 40px;
+    text-align: right;
+}
+
+.bottom_text-down strong{
+    color: #65da0f;
+}
+
+.bottom-btn{
+    width: 100%;
+    padding: 12px 20px 10px 20px;
+    border: 2.5px solid #65da0f;
+    font-family: Cygre;
+    font-size: 22.3px;
+    letter-spacing: 1px;
+    margin-left: -1px;
+    text-transform: uppercase;
+    background-color: transparent;
+}
+
+.small-btn{
+    margin-top: 10px;
+    font-size: 16px;
+    padding: 6px 20px 5px 30px;
+    letter-spacing: 8px;
+}
+
+.btn_img-small{
+    transform: scale(0.8);
+}
+
+.btn_content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* CALC START */
+.calc_header{
+    padding-top: 65px;
+}
+
+.calc_bottom{
+    padding-bottom: 80px;
+}
+
+.calc_title-top{
+    font-size: 34.28px;
+    font-family: Ermilov;
+    margin-bottom: 8px;
+}
+.calc_desc-top strong{
+    color: #65da0f;
+}
+
+.calc_desc-top{
+    font-size: 16px;
+    font-family: Cygre;
+}
+
+.calc{
+    border: 2px solid #65da0f;
+    padding: 20px 15px;
+    margin: 30px 0;
+}
+
+.calc_inner{
+    padding: 15px 0;
+}
+
+.calc_title{
+    font-size: 28px;
+    font-family: Cygre;
+    letter-spacing: 16.5px;
+}
+
+.calc_desc{
+    font-family: Cygre;
+    font-size: 16.7px;
+    margin-top: 2px;
+    margin-bottom: 7px;
+}
+.calc_line{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.calc_name{
+    font-family: Cygre;
+    text-transform: uppercase;
+    border: 2px solid #65da0f;
+    margin-right: 10px;
+    text-align: center;
+    padding: 4px 0;
+    max-width: 100px;
+    width: 100%;
+}
+
+.calc_input{
+    width: 100%;
+    border: 2px solid #65da0f;
+    outline: none;
+    padding: 0 12px;
+}
+
+.calc_input[type="text"]{
+    font-family: Cygre;
+}
+
+.calc_btn{
+    width: 100%;
+    text-align: center;
+    font-family: Cygre;
+    background-color: #65da0f;
+    padding: 6px 0px;
+}
+
+.calc_price{
+    margin-top: 7px;
+    display: flex;
+    justify-content: space-between;
+    font-family: Cygre;
+    align-items: flex-end;
+}
+
+.calc_price-text{
+    font-size: 10.5px;
+}
+
+.calc_price-num{
+    font-size: 16.7px;
+}
+
+.info-text{
+    font-family: Cygre;
+    font-size: 15.4px;
+    margin-bottom: 20px;
+}
+
+.info-text strong{
+    color:#65da0f;
+}
+
+/* CALC END */
+
+.more_info-title{
+    font-family: Ermilov;
+    font-size: 33.3px;
+    margin-bottom: 25px;
+}
+
+.question_name{
+    font-family: Cygre;
+    font-size: 17.5px;
+    margin-bottom: 10px;
+}
+
+.question{
+    margin-bottom: 30px;
+}
+
+.question_desc{
+    font-family: Cygre;
+    font-size: 14.4px;
+}
+
+.question_desc strong{
+    color:#65da0f;
+}
+
+.question_name-right, .question_desc-right{
+    text-align: right;
+}
+
+.question_margin{
+    margin-bottom: 70px;
+}
+
+.calc-img{
+    position: absolute;
+    top: 316px;
+    left: 300px;
+    transform: scale(1.45) rotate(-12deg);
+    opacity: .7;
+}
